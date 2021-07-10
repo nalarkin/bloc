@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 
-class User extends Equatable {
-  const User({required this.id, 
+class FirestoreUser extends Equatable {
+  const FirestoreUser({required this.id, 
   required this.email, 
   required this.firstName,
   required this.lastName,
@@ -16,14 +16,14 @@ class User extends Equatable {
   final String joinDate;
   final String username;
 
-  User copyWith({
+  FirestoreUser copyWith({
       String? email,
       String? firstName,
       String? lastName,
       String? joinDate,
       String? username
     }) {
-    return User(
+    return FirestoreUser(
       id: id,
       email: email ?? this.email,
       firstName: firstName ?? this.firstName,
